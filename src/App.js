@@ -1,5 +1,6 @@
 import React from 'react';
 import  Nav from './Nav';
+import Kombuchas from './Kombuchas'
 import { Switch, Route } from 'react-router-dom';
 
 function App(){
@@ -11,6 +12,7 @@ function App(){
       <Switch>
         <Route exact path='/' component={} />
         <Route path='/all-products' component={Kombuchas} />
+        <Route path='/{f.name}' component={Kombuchas} />
     </Switch>
     </div>
   );
