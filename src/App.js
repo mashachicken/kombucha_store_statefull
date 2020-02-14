@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from './Header';
-import  from './';
+import  Nav from './Nav';
 import { Switch, Route } from 'react-router-dom';
 
 function App(){
