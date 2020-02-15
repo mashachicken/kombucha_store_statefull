@@ -20,13 +20,15 @@ function Kombuchas() {
   return (
     <div className="nav" >
    <header className="teslaHeader" style={navStyle}>
+   <h1
+   </header>
     <ul style={ulStyle}>
    {flavors.map((flav,i) => (
-     <Link to="/{f.name}"></Link>
-     <li>{f.name}</li>
+     <li><Link to="/{f.name}">{f.name}</Link></li>
+
      ))}
      </ul>
-     </header>
+     <New/>
      </div>
   )
 ]
