@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Application component diagram:
 ![](public/diagram.png)
+
+# Masha's Kombucha Store
+
+#### 02.14.20
+
 ## Available Scripts
 
 In the project directory, you can run:

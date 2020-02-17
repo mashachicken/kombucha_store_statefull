@@ -6,6 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 import BodyImage from './BodyImage';
 import AboutUs from './AboutUs';
 import Contact from './Contact'
+import Pear from './Pear'
 
 function App(){
   return (
@@ -20,6 +21,7 @@ function App(){
         <Route path='/new-kombucha' component={NewKombucha} />
         <Route path='/about-us' component={AboutUs} />
         <Route path='/contact' component={Contact} />
+        <Route path='/pear' component={Pear} />
     </Switch>
     </div>
   );
