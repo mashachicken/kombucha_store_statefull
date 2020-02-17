@@ -17,5 +17,6 @@ We're dedicated to providing you the very best kombuchas in Oregon, all made loc
 We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
 <p> We are located at: 2901 Chicken Ave .Suite #1101 Portland, OR</p>
 </div>
-)}
+)
+}
 export default AboutUs

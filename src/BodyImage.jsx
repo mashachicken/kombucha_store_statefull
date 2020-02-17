@@ -4,7 +4,7 @@ import React from 'react';
 function BodyImage() {
 
 const imgStyle = {
-  height: '600px',
+  height: '550px',
   width: '100%'
 
 }

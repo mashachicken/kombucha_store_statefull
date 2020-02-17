@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Kombuchas from './Kombuchas';
 import AboutUs from './AboutUs';
-
+import Contact from './Contact'
 
 function Nav() {
   const ulStyle = {
