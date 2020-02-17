@@ -3,8 +3,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![](public/diagram.png)
 
 # Masha's Kombucha Store
+Website for a potential Kombucha Store.
 
 #### 02.14.20
+
+## Known Bugs
+
+Users can't add new flavors yet.Will add that functionality later. Also, only the last flavor on the kombuchas list is displayed(map loop doesn't work properly). 
 
 ## Available Scripts
 
