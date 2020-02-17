@@ -1,7 +1,15 @@
 import React from 'react';
-import availableProduce from '../produceSchedule.js';
+import { Link } from 'react-router-dom';
+import NewKombucha from './NewKombucha';
+
 
 function Kombuchas() {
+
+  const ulStyle = {
+
+
+};
+
 
   const flavors  = [
     {
@@ -15,22 +23,24 @@ function Kombuchas() {
       flavor: 'zingy raspberry',
       flavor: 'pear'
     }
+  ];
 
 
   return (
-    <div className="nav" >
-   <header className="teslaHeader" style={navStyle}>
-   <h1
-   </header>
+    <div >
+
+
     <ul style={ulStyle}>
-   {flavors.map((flav,i) => (
-     <li><Link to="/{f.name}">{f.name}</Link></li>
+    {flavors.map((flav,i) => (
+     <a key={i} href={`http://localhost:3000/#/${flav.flavor}`}>
+       <li key={i}> {flav.flavor} </li>
+       </a>
 
      ))}
      </ul>
-     <New/>
+     <NewKombucha/>
+
      </div>
   )
-]
 }
-export default Produce;
+export default Kombuchas;

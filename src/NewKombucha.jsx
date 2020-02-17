@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function NewKombucha() {
   return (
   <form>
@@ -11,4 +12,4 @@ function NewKombucha() {
   </form>
 )
 }
-export default New;
+export default NewKombucha;
