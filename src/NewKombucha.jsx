@@ -5,7 +5,7 @@ function NewKombucha() {
   return (
   <form>
   <label>
-  Flavor:
+  <p>Suggest a custom flavor:</p>
   <input type="text" className="flavor" />
   </label>
   <input type="submit" value="Submit" />

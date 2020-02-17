@@ -4,7 +4,7 @@ import Kombuchas from './Kombuchas'
 import NewKombucha from './NewKombucha';
 import { Switch, Route } from 'react-router-dom';
 import BodyImage from './BodyImage';
-
+import AboutUs from './AboutUs'
 
 function App(){
   return (
@@ -17,6 +17,7 @@ function App(){
         <Route path='/all-products' component={Kombuchas} />
         <Route path='/{f.name}' component={Kombuchas} />
         <Route path='/new-kombucha' component={NewKombucha} />
+        <Route path='/about-us' component={AboutUs} />
     </Switch>
     </div>
   );

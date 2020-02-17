@@ -2,15 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NewKombucha from './NewKombucha';
 
-
 function Kombuchas() {
-
-  const ulStyle = {
-
-
-};
-
-
+  const font = {
+    fontFamily: 'Monospace'  
+  }
   const flavors  = [
     {
       flavor: 'original',
@@ -25,12 +20,9 @@ function Kombuchas() {
     }
   ];
 
-
   return (
-    <div >
-
-
-    <ul style={ulStyle}>
+    <div style={font}>
+    <ul>
     {flavors.map((flav,i) => (
      <a key={i} href={`http://localhost:3000/#/${flav.flavor}`}>
        <li key={i}> {flav.flavor} </li>
