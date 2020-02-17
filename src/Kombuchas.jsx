@@ -4,7 +4,7 @@ import NewKombucha from './NewKombucha';
 
 function Kombuchas() {
   const font = {
-    fontFamily: 'Monospace'  
+    fontFamily: 'Monospace'
   }
   const flavors  = [
     {
@@ -23,16 +23,13 @@ function Kombuchas() {
   return (
     <div style={font}>
     <ul>
-    {flavors.map((flav,i) => (
-     <a key={i} href={`http://localhost:3000/#/${flav.flavor}`}>
-       <li key={i}> {flav.flavor} </li>
-       </a>
-
-     ))}
-     </ul>
-     <NewKombucha/>
-
-     </div>
-  )
-}
-export default Kombuchas;
+      {flavors.map((flav,i) => (
+        <a key={i} href={`http://localhost:3000/#/${flav.flavor}`}>
+        <li key={i}> {flav.flavor} </li></a>
+      ))}
+    </ul>
+    <NewKombucha/>
+    </div>
+    )
+  }
+  export default Kombuchas;
