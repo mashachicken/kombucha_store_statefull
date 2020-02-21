@@ -2,6 +2,13 @@ import React from 'react';
 
 
 function NewKombucha() {
+  let _flavor = null;
+
+  function handleNewTicketFormSubmission(event) {
+    event.preventDefault();
+    console.log(_flavor.value)
+     _flavor.value = '';
+  }
   return (
     <div>
     <form onSubmit={handleNewTicketFormSubmission}
