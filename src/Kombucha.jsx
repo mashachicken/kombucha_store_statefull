@@ -1,14 +1,16 @@
 import React from 'react';
-import PropTyes from 'prop-types';
-import Kombucha from './Kombucha'
+import PropTypes from 'prop-types';
 
-function Kombucha() {
+function Kombucha(props) {
 
 
   return(
+    <div>
     <h3> {props.flavor} </h3>
+    </div>
   )
-Kombucha.propTpes = {
-  flavor: PropTyes.string.isRequired
+}
+Kombucha.propTypes = {
+  flavor: PropTypes.string.isRequired
 }
   export default Kombucha;

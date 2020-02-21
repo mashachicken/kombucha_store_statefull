@@ -1,15 +1,15 @@
 import React from 'react';
-import PropTyes from 'prop-types';
+import PropTypes from 'prop-types';
 
-function NewKombucha() {
+class NewKombucha extends React.Component {
   let _flavor = null;
 
   function handleNewKombuchaSubmission(event) {
     event.preventDefault();
-    console.log(_flavor.value)
+    props.onNewKombuchaSubmission({flavor: _flavor.value});
      _flavor.value = '';
   }
-  return (
+  render (){
     <div>
     <form onSubmit={handleNewKombuchaSubmission}>
 
@@ -22,10 +22,10 @@ function NewKombucha() {
     <button type="submit"> Sumbit </button>
     </form>
     </div>
-  )
+  }
 }
 
 NewKombucha.propTypes = {
-  NewKombucha: PropTypes.func
-}
+  onNewKombuchaSubmission: PropTypes.func
+};
 export default NewKombucha;

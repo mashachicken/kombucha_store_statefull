@@ -8,19 +8,19 @@ import AboutUs from './AboutUs';
 import Contact from './Contact'
 import Pear from './Pear'
 
-class App extends React.Component(){
+class App extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      kombuchaList: []
+      masterKombuchaList: []
     };
     this.handleAddingNewKombucha = this.handleAddingNewKombucha.bind(this)
   }
   handleAddingNewKombucha(newKombucha) {
-    var newKombuchaList = this.state.kombuchaList.slice();
+    var newKombuchaList = this.state.masterKombuchaList.slice();
     newKombuchaList.push(newKombucha)
-    this.setState({kombuchaList: newKombuchaList});
+    this.setState({masterKombuchaList: newKombuchaList});
   }
   render() {
   return (

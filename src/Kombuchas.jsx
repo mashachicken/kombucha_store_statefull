@@ -2,23 +2,25 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NewKombucha from './NewKombucha';
 import Kombucha from './Kombucha';
+import { v4 } from 'uuid';
+import PropTypes from 'prop-types';
 
-function Kombuchas() {
-  const font = {
-    fontFamily: 'Monospace'
-  }
 
+function Kombuchas(props) {
+    const font = {
+
+    }
   return (
     <div style={font}>
-    props.kombuchas.map((flavor, index)=>
+    {props.kombuchaList.map((kombucha)=>
     <Kombucha flavor={kombucha.flavor}
-    key={index}/>
+    key={kombucha.id}/>
   )}
   </div>
 );
 }
   Kombucha.propTypes = {
-    kombuchaList: propTypes.array
+    kombuchaList: PropTypes.array
   }
 
   export default Kombuchas;
