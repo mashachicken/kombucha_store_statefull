@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTyes from 'prop-types';
 
 function NewKombucha() {
   let _flavor = null;
@@ -25,7 +25,7 @@ function NewKombucha() {
   )
 }
 
-NewKombucha.proptypes = {
+NewKombucha.propTypes = {
   NewKombucha: PropTypes.func
 }
 export default NewKombucha;

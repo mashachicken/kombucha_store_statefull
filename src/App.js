@@ -15,29 +15,29 @@ class App extends React.Component(){
     this.state = {
       kombuchaList: []
     };
-    this.handleAddingNewKombucha = thos.handleAddingNewKombucha.bind(this) 
+    this.handleAddingNewKombucha = this.handleAddingNewKombucha.bind(this)
   }
-  handleAddingNewKombucha(NewKombucha) {
+  handleAddingNewKombucha(newKombucha) {
     var newKombuchaList = this.state.kombuchaList.slice();
     newKombuchaList.push(newKombucha)
     this.setState({kombuchaList: newKombuchaList});
   }
+  render() {
   return (
     <div>
-    <header className="App-header">
       <Nav />
       <BodyImage/>
-    </header>
       <Switch>
         <Route path='/all-products' component={Kombuchas} />
         <Route path='/{f.name}' component={Kombuchas} />
-        <Route path='/new-kombucha' component={NewKombucha} />
+        <Route path='/new-kombucha' render={()=><NewKombucha onKombuchaCreation={this.handleAddingNewKombucha} />} />
         <Route path='/about-us' component={AboutUs} />
         <Route path='/contact' component={Contact} />
         <Route path='/pear' component={Pear} />
     </Switch>
     </div>
   );
+}
 }
 
 export default App;

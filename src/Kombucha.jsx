@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTyes from 'prop-types';
+import Kombucha from './Kombucha'
 
 function Kombucha() {
 
