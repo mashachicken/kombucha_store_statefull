@@ -4,16 +4,15 @@ import React from 'react';
 function NewKombucha() {
   let _flavor = null;
 
-  function handleNewTicketFormSubmission(event) {
+  function handleNewKombuchaSubmission(event) {
     event.preventDefault();
     console.log(_flavor.value)
      _flavor.value = '';
   }
   return (
     <div>
-    <form onSubmit={handleNewTicketFormSubmission}
+    <form onSubmit={handleNewKombuchaSubmission}>
 
-    <p>Suggest a custom flavor:</p>
     <input
     type="text"
     className="flavor"
@@ -24,5 +23,9 @@ function NewKombucha() {
     </form>
     </div>
   )
+}
+
+NewKombucha.proptypes = {
+  NewKombucha: PropTypes.func
 }
 export default NewKombucha;

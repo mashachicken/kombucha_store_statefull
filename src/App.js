@@ -8,7 +8,20 @@ import AboutUs from './AboutUs';
 import Contact from './Contact'
 import Pear from './Pear'
 
-function App(){
+class App extends React.Component(){
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      kombuchaList: []
+    };
+    this.handleAddingNewKombucha = thos.handleAddingNewKombucha.bind(this) 
+  }
+  handleAddingNewKombucha(NewKombucha) {
+    var newKombuchaList = this.state.kombuchaList.slice();
+    newKombuchaList.push(newKombucha)
+    this.setState({kombuchaList: newKombuchaList});
+  }
   return (
     <div>
     <header className="App-header">
