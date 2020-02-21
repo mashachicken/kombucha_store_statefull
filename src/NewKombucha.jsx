@@ -3,13 +3,19 @@ import React from 'react';
 
 function NewKombucha() {
   return (
-  <form>
-    <label>
-      <p>Suggest a custom flavor:</p>
-      <input type="text" className="flavor" />
-    </label>
-    <input type="submit" value="Submit" />
-  </form>
-)
+    <div>
+    <form onSubmit={handleNewTicketFormSubmission}
+
+    <p>Suggest a custom flavor:</p>
+    <input
+    type="text"
+    className="flavor"
+    placeholder="flavor"
+    ref={(input) => {_flavor = input;}}/>
+
+    <button type="submit"> Sumbit </button>
+    </form>
+    </div>
+  )
 }
 export default NewKombucha;
