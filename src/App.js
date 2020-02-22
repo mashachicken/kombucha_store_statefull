@@ -23,22 +23,22 @@ class App extends React.Component {
     this.setState({masterKombuchaList: newKombuchaList});
   }
   render() {
-  return (
-    <div>
+    return (
+      <div>
       <Nav />
       <BodyImage/>
       <Switch>
-        <Route path='/all-products' render={()=><Kombuchas
-              kombuchaList={this.state.masterKombuchaList}/>} />
+      <Route path='/all-products' render={()=><Kombuchas
+        kombuchaList={this.state.masterKombuchaList}/>} />
         <Route path='/{f.name}' component={Kombuchas} />
         <Route path='/new-kombucha' render={()=><NewKombucha onNewKombuchaSubmission={this.handleAddingNewKombucha} />} />
         <Route path='/about-us' component={AboutUs} />
         <Route path='/contact' component={Contact} />
         <Route path='/pear' component={Pear} />
-    </Switch>
-    </div>
-  );
-}
-}
+        </Switch>
+        </div>
+      );
+    }
+  }
 
-export default App;
+  export default App;
