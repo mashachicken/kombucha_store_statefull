@@ -31,7 +31,7 @@ class App extends React.Component {
         <Route path='/all-products' render={()=><Kombuchas
               kombuchaList={this.state.masterKombuchaList}/>} />
         <Route path='/{f.name}' component={Kombuchas} />
-        <Route path='/new-kombucha' render={()=><NewKombucha onKombuchaCreation={this.handleAddingNewKombucha} />} />
+        <Route path='/new-kombucha' render={()=><NewKombucha onNewKombuchaSubmission={this.handleAddingNewKombucha} />} />
         <Route path='/about-us' component={AboutUs} />
         <Route path='/contact' component={Contact} />
         <Route path='/pear' component={Pear} />
