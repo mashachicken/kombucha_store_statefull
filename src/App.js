@@ -28,7 +28,8 @@ class App extends React.Component {
       <Nav />
       <BodyImage/>
       <Switch>
-        <Route path='/all-products' component={Kombuchas} />
+        <Route path='/all-products' render={()=><Kombuchas
+              kombuchaList={this.state.masterKombuchaList}/>} />
         <Route path='/{f.name}' component={Kombuchas} />
         <Route path='/new-kombucha' render={()=><NewKombucha onKombuchaCreation={this.handleAddingNewKombucha} />} />
         <Route path='/about-us' component={AboutUs} />

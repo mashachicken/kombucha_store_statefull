@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class NewKombucha extends React.Component {
+function NewKombucha(props) {
   let _flavor = null;
 
   function handleNewKombuchaSubmission(event) {
@@ -9,7 +9,7 @@ class NewKombucha extends React.Component {
     props.onNewKombuchaSubmission({flavor: _flavor.value});
      _flavor.value = '';
   }
-  render (){
+  return(
     <div>
     <form onSubmit={handleNewKombuchaSubmission}>
 
@@ -22,7 +22,7 @@ class NewKombucha extends React.Component {
     <button type="submit"> Sumbit </button>
     </form>
     </div>
-  }
+  )
 }
 
 NewKombucha.propTypes = {
