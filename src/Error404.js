@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import Error404 from './components/Error404';
 
 function Error404(props){
   let errorMessages = {

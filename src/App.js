@@ -7,6 +7,7 @@ import BodyImage from './BodyImage';
 import AboutUs from './AboutUs';
 import Contact from './Contact'
 import Flavor from './Flavor'
+import Error404 from './Error404';
 
 class App extends React.Component {
 
@@ -14,6 +15,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       masterKombuchaList: []
+
     };
     this.handleAddingNewKombucha = this.handleAddingNewKombucha.bind(this)
   }
