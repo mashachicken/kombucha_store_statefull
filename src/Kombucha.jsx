@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { Link } from 'react-router-dom';
 function Kombucha(props) {
 
 
   return(
     <div>
-    <h3> {props.flavor} </h3>
+    <h3> <Link to={props.flavor}> {props.flavor} </Link> </h3>
     </div>
   )
 }

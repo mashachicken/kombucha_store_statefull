@@ -6,7 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 import BodyImage from './BodyImage';
 import AboutUs from './AboutUs';
 import Contact from './Contact'
-import Pear from './Pear'
+import Flavor from './Flavor'
 
 class App extends React.Component {
 
@@ -34,7 +34,8 @@ class App extends React.Component {
         <Route path='/new-kombucha' render={()=><NewKombucha onNewKombuchaSubmission={this.handleAddingNewKombucha} />} />
         <Route path='/about-us' component={AboutUs} />
         <Route path='/contact' component={Contact} />
-        <Route path='/pear' component={Pear} />
+        <Route path='/:flavorId' render={(match)=> <Flavor kombuchaList={this.state.masterKombuchaList} match={match}/>} />
+        <Route component={Error404} />
         </Switch>
         </div>
       );
